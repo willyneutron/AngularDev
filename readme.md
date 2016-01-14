@@ -2,7 +2,7 @@ AngularDev
 ----------
 
 Automation for building a basic Angular dev environment in a Vagrant VM based on Yeoman Angular
-Genrator. The VM is based in a Ubuntu Trusty Server (14.04 LTS) base box, but the provisioning
+Generator. The VM is based in a Ubuntu Trusty Server (14.04 LTS) base box, but the provisioning
 script should work in any Debian-based distribution.
 
 All basic dependencies of Yeoman Generator are installed such as NodeJS, NPM, Ruby, Compass
@@ -44,11 +44,10 @@ http://yeoman.io/codelab/scaffold-app.html
 FAQ
 ----
 
-*When I try to install some NPM packages inside my VM, NPM freezes or gets killed unexpectedly*
+__When I try to install some NPM packages inside my VM, NPM freezes or gets killed unexpectedly__
 Your VM is running out of RAM. Add some more in Vagrantfile, at least 1024MB.
 
-*When I run my VM it takes forever or get stuck trying to connect via SSH ("Warning: Authentication failure. Retrying...")
-*
+__When I run my VM it takes forever or get stuck trying to connect via SSH (Warning: Authentication failure. Retrying...)__
 Recheck your net configuration in Vagrantfile. Setting up net as "public_connection" and setting
 a fixed IP usually solves the problem. In some cases, the VM takes a long time to initialize SSH
 services, so be patient!
